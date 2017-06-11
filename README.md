@@ -31,7 +31,7 @@ https://github.com/andfinally/iframe-autoheight
 * We should add top and bottom margins to the calculation of height in `iframe-autoheight-child.es`.
 * We could optimise the parent script by splitting it into two, one small part caching all postMessages received, and the other processing the cached messages once it's loaded.
 
-## Development
+## Demo and development
 
 * `gulp` to start a watch process which transpiles the ES6 and SASS files in `src` and copies the resulting files to the `dev` and `dist` folders.
 * `gulp start` to run the build, start serving the demo at http://localhost:8087, and start the watch process.
