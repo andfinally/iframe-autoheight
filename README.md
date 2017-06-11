@@ -7,11 +7,11 @@ https://github.com/andfinally/iframe-autoheight
 ## How to use
 
 * Copy the two scripts `iframe-autoheight-parent.min.js` and `iframe-autoheight-child.min.js` and the stylesheet `iframe-autoheight.css` from the `dist` folder to your server.
+* Change `permittedOrigin` in `iframe-autoheight-parent.min.js` to the hostname of the page inside the iframe. For example, if the URL of the child page is `https://mysite.com/content`, `permittedOrigin` should be `https://mysite.com`.
 * Include `iframe-autoheight-parent.min.js` and `iframe-autoheight.css` in the parent page that contains the iframe.
 * Include `iframe-autoheight-child.min.js` in the child page inside the iframe.
 * Ensure your iframe has a `name` attribute and give it the class `iframe-autoheight`. I also recommend `scrolling` and `frameborder` attributes like in this example:
     `<iframe src="content.html" name="nom" class="iframe-autoheight" scrolling="no" frameborder="0"></iframe>`
-* Change `permittedOrigin` in `iframe-autoheight-parent.min.js` to the hostname of the page inside the iframe. For example, if the URL of the child page is `https://mysite.com/content`, `permittedOrigin` should be `https://mysite.com`.
 * The script in the page inside the iframe sends a postMessage to the parent page on `DOMContentLoaded` or on load, and also whenever it's resized.
 * The script in the parent page adjusts the height of the iframe to fit the height of the `document` element in the child page.
 
