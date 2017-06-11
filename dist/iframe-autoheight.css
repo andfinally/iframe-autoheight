@@ -1,0 +1,5 @@
+.iframe-autoheight {
+	overflow: hidden;
+	width: 100%;
+	border: none;
+}

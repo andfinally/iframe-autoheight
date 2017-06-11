@@ -1,0 +1,43 @@
+{
+  "name": "iframe-autoheight",
+  "version": "1.0.0",
+  "description": "Snippet for auto-sizing iframe to fit contents",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andfinally/iframe-autoheight.git"
+  },
+  "author": "And Finally",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andfinally/iframe-autoheight/issues"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "keywords": [
+    "JavaScript",
+    "ES6",
+    "iframe",
+    "postMessage",
+    "responsive"
+  ],
+  "homepage": "https://github.com/andfinally/iframe-autoheight#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-gzip": "^1.4.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-strip-comments": "^2.4.5",
+    "gulp-supervisor": "^0.1.2",
+    "gulp-uglify": "^3.0.0",
+    "require-dir": "^0.3.2"
+  }
+}
